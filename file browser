@@ -1,0 +1,8 @@
+@manage
+? "file browser"
+? "browse with dpad"
+@manage2
+locate 0,5:print "projects"
+@manage25
+var b$[0]
+print project
