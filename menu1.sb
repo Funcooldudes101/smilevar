@@ -1,0 +1,15 @@
+print "smilevar"
+@menu1
+locate 33,8:print "a=crash"
+
+
+if button()==16 then goto @crash
+
+locate 33,10:print "b=file transfer"
+
+if button()==32 then goto @transfer
+
+locate 33,12:print "x=apps menu"
+
+if button()==64 then goto @appmenu
+goto @menu1
