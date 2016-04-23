@@ -1,0 +1,16 @@
+@transfer
+acls
+dialog "cable hooked up?",5,"transfer",-120
+
+@rcv
+xon mic
+micstart 1,1,10
+prgedit 1
+? micpos
+
+wait 150
+
+dim file%[10910] 'micsize
+print "succeed"
+wait 90
+end
