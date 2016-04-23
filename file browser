@@ -5,4 +5,5 @@
 locate 0,5:print "projects"
 @manage25
 var b$[0]
-print projects
+files b$
+
