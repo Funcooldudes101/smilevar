@@ -4,6 +4,25 @@
 @manage2
 locate 0,5:print "projects"
 @manage25
-var b$[0]
-files b$
+
+files "//",b$
+for i=0to len(b$)-1:?b$[1]:next
+locate 0,25:print "> for files"
+
+@act1
+if button()==8 then goto @manage3
+goto @act1
+
+@manage3
+acls
+? "file browser"
+? "browse with dpad"
+locate 0,5:print "files"
+
+print "dat" files
+locate 0,25:print "< for projects"
+
+@act2
+if button()==4 then goto @manage
+goto @act2
 
